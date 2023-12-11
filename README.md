@@ -20,3 +20,7 @@
 ![n1.png](S4/n1.png)
 ![n2.png](S4/n2.png)
 ![n3.png](S4/n3.png)
+
+## Session 5 : TurtleSim Exercise - Launch file with Turtlesim Nodes to draw shapes(Square, Rectangle, Triangle, Star shape) using TurleSim package.
+
+![turtlesim.png](S5/turtlesim.png)

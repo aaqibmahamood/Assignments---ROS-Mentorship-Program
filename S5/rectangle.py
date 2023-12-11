@@ -65,7 +65,7 @@ def rectangle():
         rate.sleep()
 
         #Forward
-        vel_msg.linear.x = 2 #m/s
+        vel_msg.linear.x = 1 #m/s
         vel_msg.angular.z = 0 #r/s
         pub.publish(vel_msg)
         rate.sleep()

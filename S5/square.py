@@ -1,23 +1,11 @@
-#!/usr/bin/env python
-
-'''In this python script we are moving the turtle in square shape using geometry_msgs...!!!'''
-''' GitHub: https://github.com/ROBODITYA '''
-
+#!/usr/bin/env python3
 import rospy
 from geometry_msgs.msg  import Twist
 
-# main function
 def rectangle():
-    
-    # initializing the node
     rospy.init_node('rectangle', anonymous=True)
-    
-    # seting the topic on which all msgs have to publish
-    pub = rospy.Publisher("/turtlesim2/turtle1/cmd_vel", Twist, queue_size=20)
-    
-    rate = rospy.Rate(1) # 1hz
-    
-    # storing twist msgs in veriable
+    pub = rospy.Publisher("/turtlesim1/turtle1/cmd_vel", Twist, queue_size=20)
+    rate = rospy.Rate(1)#hz
     vel_msg = Twist()
     rate.sleep()
     

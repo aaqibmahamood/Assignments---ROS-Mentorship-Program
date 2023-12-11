@@ -11,13 +11,7 @@ def rectangle():
     
     for i in range(1):
         #Forward
-        vel_msg.linear.x = 1 #m/s
-        vel_msg.angular.z = 0 #r/s
-        pub.publish(vel_msg)
-        rate.sleep()
-
-        #Forward
-        vel_msg.linear.x = 1 #m/s
+        vel_msg.linear.x = 2 #m/s
         vel_msg.angular.z = 0 #r/s
         pub.publish(vel_msg)
         rate.sleep()
@@ -40,9 +34,21 @@ def rectangle():
         pub.publish(vel_msg)
         rate.sleep()
 
+        #Stop
+        vel_msg.linear.x = 0 #m/s
+        vel_msg.angular.z = 0 #r/s
+        pub.publish(vel_msg)
+        rate.sleep()
+
         #Turn
         vel_msg.linear.x = 0 #m/s
         vel_msg.angular.z= 1.59 #r/s
+        pub.publish(vel_msg)
+        rate.sleep()
+
+        #Forward
+        vel_msg.linear.x = 2 #m/s
+        vel_msg.angular.z = 0 #r/s
         pub.publish(vel_msg)
         rate.sleep()
 
@@ -52,18 +58,6 @@ def rectangle():
         pub.publish(vel_msg)
         rate.sleep()
 
-        #Forward
-        vel_msg.linear.x = 1 #m/s
-        vel_msg.angular.z = 0 #r/s
-        pub.publish(vel_msg)
-        rate.sleep()
-
-        #Forward
-        vel_msg.linear.x = 1 #m/s
-        vel_msg.angular.z = 0 #r/s
-        pub.publish(vel_msg)
-        rate.sleep()
-
         #Turn
         vel_msg.linear.x = 0 #m/s
         vel_msg.angular.z= 1.59 #r/s
@@ -71,10 +65,10 @@ def rectangle():
         rate.sleep()
 
         #Forward
-        vel_msg.linear.x = 1 #m/s
+        vel_msg.linear.x = 2 #m/s
         vel_msg.angular.z = 0 #r/s
         pub.publish(vel_msg)
         rate.sleep()
-
+        
 if __name__ == '__main__':
     rectangle()

@@ -58,13 +58,11 @@ def rectangle():
         pub.publish(vel_msg)
         rate.sleep()
 
-        #Turn
+     #Stop
         vel_msg.linear.x = 0 #m/s
-        vel_msg.angular.z= 1.59 #r/s
+        vel_msg.angular.z = 0 #r/s
         pub.publish(vel_msg)
-        rate.sleep()
-
-        #Forward
+        rate.sleep()    #Forward
         vel_msg.linear.x = 1 #m/s
         vel_msg.angular.z = 0 #r/s
         pub.publish(vel_msg)
@@ -75,6 +73,6 @@ def rectangle():
         vel_msg.angular.z = 0 #r/s
         pub.publish(vel_msg)
         rate.sleep()
-        
+
 if __name__ == '__main__':
     rectangle()

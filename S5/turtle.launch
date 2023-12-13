@@ -23,6 +23,10 @@
     <group ns="turtlesim4">
         <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
         <node pkg="rmp37" name="star" type="star.py" output="screen" />
-    </group>
+    <#Stop
+        vel_msg.linear.x = 0 #m/s
+        vel_msg.angular.z = 0 #r/s
+        pub.publish(vel_msg)
+        rate.sleep()/group>
 
 </launch>

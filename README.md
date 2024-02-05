@@ -24,3 +24,8 @@
 ## Session 5 : TurtleSim Exercise - Launch file with Turtlesim Nodes to draw shapes(Square, Rectangle, Triangle, Star shape) using TurleSim package.
 
 ![turtlesim.png](S5/turtlesim.png)
+
+## Session 6 : Services - Creating a service ("add_two_ints_server") node which will receive two ints from the Client ("add_two_ints_client") Node and return the sum.
+
+![turtlesim.png](S6/client-srv.png)
+![turtlesim.png](S6/server-srv.png)
